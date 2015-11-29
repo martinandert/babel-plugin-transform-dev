@@ -25,7 +25,10 @@
   "scripts": {
     "build": "babel src/ --out-dir lib/",
     "lint": "eslint src/",
-    "test": "npm run build && npm run lint && mocha"
+    "test": "npm run build && npm run lint && mocha",
+    "release:breaking": "npm test && npm version major -m 'Release v%s' && git push --tags origin HEAD:master && npm publish",
+    "release:feature": "npm test && npm version minor -m 'Release v%s' && git push --tags origin HEAD:master && npm publish",
+    "release:fix": "npm test && npm version patch -m 'Release v%s' && git push --tags origin HEAD:master && npm publish"
   },
   "devDependencies": {
     "babel-cli": "^6.2.0",
