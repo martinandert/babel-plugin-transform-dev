@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-transform-dev",
+  "version": "0.0.0",
+  "description": "A plugin for Babel v6 which replaces \"__DEV__\" with \"'production' !== process.env.NODE_ENV\".",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin",
+    "transform",
+    "dev",
+    "debug"
+  ],
+  "author": "Martin Andert",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinandert/babel-plugin-transform-dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martinandert/babel-plugin-transform-dev/issues"
+  },
+  "homepage": "https://github.com/martinandert/babel-plugin-transform-dev#readme",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "build": "babel src/ --out-dir lib/",
+    "lint": "eslint src/",
+    "test": "npm run build && npm run lint && mocha"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^4.1.6",
+    "babel-plugin-add-module-exports": "^0.1.1",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.10.2",
+    "mocha": "^2.3.4"
+  }
+}
