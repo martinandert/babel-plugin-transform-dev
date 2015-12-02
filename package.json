@@ -30,9 +30,9 @@
     "prepublish": "npm run build",
     "preversion": "npm test",
     "postversion": "git push --tags origin HEAD:master",
-    "release:breaking": "npm test && npm version major -m 'Release v%s' && npm publish",
-    "release:feature": "npm test && npm version minor -m 'Release v%s' && npm publish",
-    "release:fix": "npm test && npm version patch -m 'Release v%s' && npm publish"
+    "release:breaking": "npm version major -m 'Release v%s' && npm publish",
+    "release:feature": "npm version minor -m 'Release v%s' && npm publish",
+    "release:fix": "npm version patch -m 'Release v%s' && npm publish"
   },
   "devDependencies": {
     "babel-cli": "^6.2.0",

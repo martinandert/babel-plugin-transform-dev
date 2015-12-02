@@ -9,6 +9,11 @@ Tags:
 - [Internal]
 - [Polish]
 
+## Unpublished
+
+- **Internal**
+  - Don't run tests twice in before release hook
+
 ## 1.1.1 (December 2, 2015)
 
 - **Internal**
