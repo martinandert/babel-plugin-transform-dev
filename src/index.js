@@ -6,7 +6,7 @@ export default function plugin({ types: t, template }) {
     visitor: {
       Identifier(path) {
         if (t.isIdentifier(path.node, { name: '__DEV__' })) {
-          path.replaceWith(this.opts.evaluate ? bool : expr);
+          path.replaceWith(this.opts.evaluate !== false ? bool : expr);
         }
       }
     }

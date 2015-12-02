@@ -11,6 +11,8 @@ Tags:
 
 ## Unpublished
 
+- **Breaking Change**
+  - Replace `__ENV__` with the result of evaluating `"production" !== process.env.NODE_ENV`
 - **Internal**
   - Don't run tests twice in before release hook
 

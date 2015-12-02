@@ -8,7 +8,7 @@ function trim(str) {
   return str.replace(/^\s+|\s+$/, '');
 }
 
-describe('babel-plugin-dev', function() {
+describe('babel-plugin-transform-dev', function() {
   var fixturesDir = path.join(__dirname, 'fixtures');
 
   fs.readdirSync(fixturesDir).map(function(caseName) {

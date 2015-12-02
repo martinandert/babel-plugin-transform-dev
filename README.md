@@ -3,11 +3,9 @@
 [![build status](https://img.shields.io/travis/martinandert/babel-plugin-transform-dev.svg?style=flat-square)](https://travis-ci.org/martinandert/babel-plugin-transform-dev)
 [![npm version](https://img.shields.io/npm/v/babel-plugin-transform-dev.svg?style=flat-square)](https://www.npmjs.com/package/babel-plugin-transform-dev)
 
-Replaces all occurrences of `__DEV__` in your JavaScript code with `"production" !== process.env.NODE_ENV`.
+Replaces all occurrences of `__DEV__` in your JavaScript code with the result of evaluating `"production" !== process.env.NODE_ENV`.
 
-Make sure to put this plugin before other plugins that might transform `process.env`.
-
-You can also set the plugin's `evaluate` option to `true` in order to replace `__ENV__` with the result of evaluating `"production" !== process.env.NODE_ENV` at build time.
+In order to replace `__ENV__` with just `"production" !== process.env.NODE_ENV`, set the plugin's `evaluate` option to `false`.
 
 
 ## Installation
