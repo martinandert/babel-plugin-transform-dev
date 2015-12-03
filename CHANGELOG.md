@@ -9,7 +9,7 @@ Tags:
 - [Internal]
 - [Polish]
 
-## Unpublished
+## 2.0.0 (December 3, 2015)
 
 - **Breaking Change**
   - Replace `__ENV__` with the result of evaluating `"production" !== process.env.NODE_ENV`
