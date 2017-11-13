@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-dev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A plugin for Babel v6 which replaces `__DEV__` with the result of evaluating `'production' !== process.env.NODE_ENV`.",
   "main": "lib/index.js",
   "keywords": [
